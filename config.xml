@@ -5,10 +5,10 @@ xmlns:gap ="http://phonegap.com/ns/1.0"
 id ="com.phonegap.example1"
 version ="1.0.0">
 
-<name>app2 telefonia celular</name>
+<name>app3 contaminacion</name>
  
 <description>
-Aplicacion que muestra la telefonia celular
+Aplicacion que muestra informacion sobre la contaminacion
 </description>
 
 <author href="https://build.phonegap.com" email="jacob.monterrosas@gmail.com">

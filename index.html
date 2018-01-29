@@ -8,15 +8,17 @@
 <link rel="stylesheet" href="css/tema-app1.min.css"/>
 <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
 <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
-<!--grupo JavaScript-->
+
 <!-- Start WOWSlider.com HEAD section -->
 <link rel="stylesheet" type="text/css" href="engine1/style.css" />
 <script type="text/javascript" src="engine1/jquery.js"></script>
 <!-- End WOWSlider.com HEAD section -->
+<!--grupo JavaScript-->
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/jquery.mobile-1.4.5.min.js"></script>
-<script src="js/acciones.js"></script>
-<script src="js/phonegap.js"></script>
+<script src="js/acciones.js" type="text/javascript"></script>
+<script src="phonegap.js"></script><!-- necesario*/ -->
+
 
 
 </head>
@@ -29,40 +31,40 @@
 </div>
 
 <div>
-<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b" onClick="vibrate; return false;">
 
 <li class="ui-fisrt-child ui-last-child">
-<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r" id="beep">
 <h2>que es la contaminacion</h2>
 <p>muestra la definicion de contaminacion</p>
 </a>
 </li>
 <li class="ui-first-child ui-last-child">
-<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r" onClick="vibrate; return false;">
 <h2>tipos de contaminacion</h2>
 <p>muestra los tipos de contaminacion que hay</p>
 </a>
 </li>
 <li class="ui-first-child ui-last-child">
-<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<a href="#Pagina3"  class="ui-btn ui-btn-icon-right ui-icon-carat-r"  id="beep">
 <h2>consecuencias de la contaminacion</h2>
 <p>muestra las concecuencias de la contaminacion</p>
 </a>
 </li>
 <li class="ui-first-child ui-last-child">
-<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r" onClick="vibrate; return false;">
 <h2>las 3 r</h2>
 <p>Muestra como funcionan las 3 r</p>
 </a>
 </li>
 <li class="ui-first-child ui-last-child">
-<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r" id="beep">
 <h2>medidas preventivas</h2>
 <p>muestra algunas medidas preventivas</p>
 </a>
 </li>
 <li class="ui-first-child ui-last-child">
-<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r" onClick="vibrate; return false;">
 <h2>contaminacion en mi entorno</h2>
 <p>muestra la contaminacion de mi entorno</p>
 </a>
@@ -80,7 +82,7 @@
 </div>
 </div>
 <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
-<div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme>
 <h1>definicion</h1>
 </div>
 <div data-role="content" align="center">
@@ -121,7 +123,7 @@
 
 
 <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
-<div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme>
 <h1>tipos de contaminacion</h1>
 </div>
 <div data-role="content" align="center">
@@ -198,7 +200,7 @@ Esta tipo de contaminación se da por el conjunto de sonidos y ruidos que circul
 <br>
 5. Contaminación Visual:
 
-Este tipo de contaminación es percibida a través del sentido de la vista y expone diariamente a millones de personas, principalmente en las ciudades. Esta contaminación parte de todo aquello que afecte o perturbe la visualización de sitio alguno o rompan la estética de una zona o paisaje, y que puede incluso llegar a afectar a la salud de los individuos o zona donde se produzca el impacto ambiental. Se pueden provocar accidentes de tránsito debido a la contaminación visual.</h2><br>
+Este tipo de contaminación es percibida a través del sentido de la vista y expone diariamente a millones de personas, principalmente en las ciudades. Esta contaminación parte de todo aquello que afecte o perturbe la visualización de sitio alguno o rompan la estética de una zona o paisaje, y que puede incluso llegar a afectar a la salud de los individuos o zona donde se produzca el impacto ambiental. Se pueden provocar accidentes de tránsito debido a la contaminación visual.</ul></h2><br>
 <div data-role="main" class="ui-content">
 <div data-role="collapsible" data-content-theme="false">
 <h1>contaminacion</h1>
@@ -210,7 +212,7 @@ Este tipo de contaminación es percibida a través del sentido de la vista y exp
 <img src="imagenes/visual.jpg" width="30%" height="57%">
 </div>
 </div>
-</div></ul>
+</div>
 
 <div data-role="footer" data-theme="a" data-position="fixed">
 <h4>Aplicacion 3, JMD</h4>
@@ -379,7 +381,6 @@ Se trata de rescatar lo posible de un material que ya no sirve para nada (común
 <h4>Aplicacion 3, JMD</h4>
 </div>
 </div>
-</div>
 
 
 
@@ -390,7 +391,7 @@ data-back-btn-theme="b">
 </div>
 <div data-role="content" align="center">
 <div>
-<h2>La contaminación en mi entornoes demaciada y pienso que se tendria que idear una contra medida con toda la gente que podria ayudar a mejorar el ambiente
+<h2>La contaminación en mi entornoes demaciada y pienso que se tendria que idear una contra medida con toda la gente que podria ayudar a mejorar el ambiente</h2>
 </div>
 <!-- Start WOWSlider.com BODY section -->
 
